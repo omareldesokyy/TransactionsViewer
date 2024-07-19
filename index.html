@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transaction Viewer</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Customer Transaction Viewer</h1>
+        
+        <!-- Filter Section -->
+        <div class="filter">
+            <input type="text" id="customerName" placeholder="Filter by Customer Name">
+            <input type="number" id="transactionAmount" placeholder="Filter by Transaction Amount">
+        </div>
+        
+        <!-- Table Section -->
+        <table id="transactionTable">
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Transaction Date</th>
+                    <th>Transaction Amount</th>
+                </tr>
+            </thead>
+            <tbody id="transactionTableBody">
+                <!-- Data will be dynamically added here -->
+            </tbody>
+        </table>
+        
+        <!-- Graph Section -->
+        <div class="graph">
+            <h2>Total Transaction Amount per Day</h2>
+            <canvas id="transactionChart"></canvas>
+        </div>
+    </div>
+
+    <script src="./js/chart.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
